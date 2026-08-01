@@ -1,0 +1,29 @@
+/* ============================================================
+   mobile.css — responsive breakpoints
+   ============================================================ */
+
+/* Tablet */
+@media (max-width:900px) {
+  .topbar-inner{padding:6px 12px;gap:10px}
+  .brand-text span{display:none}
+  .brand-logo{width:30px;height:30px;font-size:.72rem;border-radius:8px}
+  .search-box{height:36px;padding:0 10px}
+  #search{font-size:.86rem}
+  .chips{padding:5px 10px;gap:5px}
+  .chip{padding:5px 10px;font-size:.72rem}
+  .map-wrap{padding:4px}
+}
+
+/* Phone */
+@media (max-width:600px) {
+  .brand-logo{display:none}
+  .brand-text{font-size:.8rem}
+  .search-box{height:34px}
+  .icon-btn{width:32px;height:32px;font-size:.95rem}
+  .chips{gap:4px;padding:4px 8px}
+  .chip{padding:5px 8px;font-size:.68rem}
+  .popup{max-width:100%;max-height:92vh;border-radius:14px 14px 0 0;align-self:end}
+  .popup-body{padding:20px 16px 18px}
+  .map-controls{top:8px;right:8px}
+  .map-btn{width:32px;height:32px;font-size:1rem}
+}

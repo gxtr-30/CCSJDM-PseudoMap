@@ -1,0 +1,352 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 700" width="1000" height="700">
+  <defs>
+    <!-- Grass -->
+    <linearGradient id="g1" x1="0" y1="0" x2="0.3" y2="1">
+      <stop offset="0%" stop-color="#4a8f3f"/><stop offset="100%" stop-color="#3a7a30"/>
+    </linearGradient>
+    <!-- Stone tile pattern -->
+    <pattern id="stone" width="28" height="28" patternUnits="userSpaceOnUse">
+      <rect width="28" height="28" fill="#a09888"/>
+      <rect x="0" y="0" width="13" height="13" fill="#968e7e" rx="1.5"/>
+      <rect x="15" y="0" width="13" height="13" fill="#9c9484" rx="1.5"/>
+      <rect x="0" y="15" width="13" height="13" fill="#9c9484" rx="1.5"/>
+      <rect x="15" y="15" width="13" height="13" fill="#968e7e" rx="1.5"/>
+    </pattern>
+    <!-- Trees -->
+    <radialGradient id="t1" cx="35%" cy="30%" r="55%">
+      <stop offset="0%" stop-color="#6cc85a"/><stop offset="100%" stop-color="#2a7a1a"/>
+    </radialGradient>
+    <radialGradient id="t2" cx="35%" cy="30%" r="55%">
+      <stop offset="0%" stop-color="#5ab84a"/><stop offset="100%" stop-color="#1a6a0a"/>
+    </radialGradient>
+    <!-- Pond -->
+    <radialGradient id="pond" cx="40%" cy="35%" r="55%">
+      <stop offset="0%" stop-color="#5599dd"/><stop offset="100%" stop-color="#2e6eaa"/>
+    </radialGradient>
+    <pattern id="ripple" width="24" height="12" patternUnits="userSpaceOnUse">
+      <path d="M0,6 Q6,2 12,6 Q18,10 24,6" fill="none" stroke="#88bbff" stroke-width="0.7" opacity="0.35"/>
+    </pattern>
+  </defs>
+
+  <!-- ===== GROUND ===== -->
+  <rect width="1000" height="700" fill="url(#g1)"/>
+  <!-- Grass texture -->
+  <g fill="#5a9a4a" opacity="0.2">
+    <circle cx="30" cy="25" r="2"/><circle cx="85" cy="42" r="1.5"/><circle cx="155" cy="18" r="2"/>
+    <circle cx="245" cy="48" r="1.5"/><circle cx="335" cy="15" r="2"/><circle cx="405" cy="52" r="1.5"/>
+    <circle cx="495" cy="12" r="2"/><circle cx="555" cy="42" r="1.5"/><circle cx="635" cy="22" r="2"/>
+    <circle cx="715" cy="48" r="1.5"/><circle cx="795" cy="12" r="2"/><circle cx="865" cy="38" r="1.5"/>
+    <circle cx="935" cy="18" r="2"/><circle cx="980" cy="52" r="1.5"/>
+    <circle cx="45" cy="115" r="2"/><circle cx="175" cy="100" r="1.5"/><circle cx="305" cy="125" r="2"/>
+    <circle cx="425" cy="95" r="1.5"/><circle cx="555" cy="120" r="2"/><circle cx="675" cy="105" r="1.5"/>
+    <circle cx="785" cy="125" r="2"/><circle cx="905" cy="100" r="1.5"/><circle cx="965" cy="120" r="2"/>
+    <circle cx="25" cy="280" r="2"/><circle cx="125" cy="295" r="1.5"/><circle cx="255" cy="275" r="2"/>
+    <circle cx="385" cy="305" r="1.5"/><circle cx="515" cy="280" r="2"/><circle cx="645" cy="295" r="1.5"/>
+    <circle cx="755" cy="280" r="2"/><circle cx="875" cy="300" r="1.5"/><circle cx="945" cy="285" r="2"/>
+    <circle cx="40" cy="380" r="2"/><circle cx="145" cy="395" r="1.5"/><circle cx="275" cy="370" r="2"/>
+    <circle cx="405" cy="398" r="1.5"/><circle cx="535" cy="375" r="2"/><circle cx="665" cy="390" r="1.5"/>
+    <circle cx="775" cy="375" r="2"/><circle cx="895" cy="395" r="1.5"/><circle cx="955" cy="380" r="2"/>
+    <circle cx="55" cy="465" r="1.5"/><circle cx="165" cy="480" r="2"/><circle cx="305" cy="458" r="1.5"/>
+    <circle cx="435" cy="488" r="2"/><circle cx="565" cy="463" r="1.5"/><circle cx="695" cy="478" r="2"/>
+    <circle cx="815" cy="463" r="1.5"/><circle cx="925" cy="480" r="2"/><circle cx="975" cy="468" r="1.5"/>
+    <circle cx="30" cy="555" r="2"/><circle cx="115" cy="572" r="1.5"/><circle cx="245" cy="548" r="2"/>
+    <circle cx="375" cy="578" r="1.5"/><circle cx="505" cy="552" r="2"/><circle cx="635" cy="568" r="1.5"/>
+    <circle cx="765" cy="552" r="2"/><circle cx="885" cy="572" r="1.5"/><circle cx="955" cy="558" r="2"/>
+    <circle cx="48" cy="648" r="1.5"/><circle cx="178" cy="662" r="2"/><circle cx="318" cy="638" r="1.5"/>
+    <circle cx="448" cy="668" r="2"/><circle cx="578" cy="642" r="1.5"/><circle cx="708" cy="658" r="2"/>
+    <circle cx="838" cy="642" r="1.5"/><circle cx="948" cy="662" r="2"/>
+  </g>
+
+  <!-- ===== STONE PATHWAYS ===== -->
+  <!-- Upper horizontal — Auditorium row -->
+  <rect x="0" y="172" width="700" height="32" fill="url(#stone)" rx="3" opacity="0.8"/>
+  <rect x="0" y="172" width="700" height="32" fill="none" stroke="#888070" stroke-width="1.5" rx="3" opacity="0.4"/>
+  <!-- Middle horizontal — ICC to Amphitheater -->
+  <rect x="0" y="310" width="610" height="32" fill="url(#stone)" rx="3" opacity="0.8"/>
+  <rect x="0" y="310" width="610" height="32" fill="none" stroke="#888070" stroke-width="1.5" rx="3" opacity="0.4"/>
+  <!-- Vertical left — Main Gate up through ICC -->
+  <rect x="78" y="195" width="32" height="430" fill="url(#stone)" rx="3" opacity="0.8"/>
+  <rect x="78" y="195" width="32" height="430" fill="none" stroke="#888070" stroke-width="1.5" rx="3" opacity="0.4"/>
+  <!-- Vertical center — top to bottom through Main Building + Kadiwa -->
+  <rect x="473" y="172" width="32" height="490" fill="url(#stone)" rx="3" opacity="0.8"/>
+  <rect x="473" y="172" width="32" height="490" fill="none" stroke="#888070" stroke-width="1.5" rx="3" opacity="0.4"/>
+  <!-- Lower horizontal — Main Gate area to Kadiwa Gate -->
+  <rect x="78" y="598" width="427" height="30" fill="url(#stone)" rx="3" opacity="0.8"/>
+  <rect x="78" y="598" width="427" height="30" fill="none" stroke="#888070" stroke-width="1.5" rx="3" opacity="0.4"/>
+  <!-- Vertical right — Amphitheater to road -->
+  <rect x="578" y="172" width="32" height="140" fill="url(#stone)" rx="3" opacity="0.8"/>
+  <rect x="578" y="172" width="32" height="140" fill="none" stroke="#888070" stroke-width="1.5" rx="3" opacity="0.4"/>
+  <!-- Short connector — Main Building to Kadiwa -->
+  <rect x="473" y="470" width="32" height="42" fill="url(#stone)" rx="3" opacity="0.8"/>
+  <rect x="473" y="470" width="32" height="42" fill="none" stroke="#888070" stroke-width="1.5" rx="3" opacity="0.4"/>
+  <!-- Short connector — Kadiwa to Kadiwa Gate -->
+  <rect x="473" y="598" width="32" height="35" fill="url(#stone)" rx="3" opacity="0.8"/>
+  <rect x="473" y="598" width="32" height="35" fill="none" stroke="#888070" stroke-width="1.5" rx="3" opacity="0.4"/>
+  <!-- CRIM/Firing connector -->
+  <rect x="700" y="125" width="32" height="50" fill="url(#stone)" rx="3" opacity="0.7"/>
+  <rect x="700" y="125" width="32" height="50" fill="none" stroke="#888070" stroke-width="1.2" rx="3" opacity="0.35"/>
+  <!-- Upper right horizontal toward CRIM -->
+  <rect x="580" y="172" width="120" height="32" fill="url(#stone)" rx="3" opacity="0.75"/>
+
+  <!-- ===== 3D BUILDING SHAPES (background, behind overlay) ===== -->
+
+  <!-- Auditorium — pink/purple block -->
+  <polygon points="415,55 428,43 428,175 415,187" fill="#9a3888" opacity="0.8"/>
+  <polygon points="220,187 233,175 428,175 415,187" fill="#7a2868" opacity="0.75"/>
+  <rect x="220" y="55" width="195" height="132" rx="5" fill="#c850b8" stroke="#9a3888" stroke-width="2" opacity="0.85"/>
+  <!-- Roof details -->
+  <rect x="240" y="68" width="35" height="14" rx="2" fill="#a04090" opacity="0.5"/>
+  <rect x="360" y="68" width="35" height="14" rx="2" fill="#a04090" opacity="0.5"/>
+
+  <!-- Auditorium Extension — blue block -->
+  <polygon points="568,50 580,38 580,145 568,157" fill="#2a5a9d" opacity="0.8"/>
+  <polygon points="435,157 447,145 580,145 568,157" fill="#1a4a8d" opacity="0.75"/>
+  <rect x="435" y="50" width="133" height="107" rx="5" fill="#3a7abd" stroke="#2a5a9d" stroke-width="2" opacity="0.85"/>
+
+  <!-- CRIMINOLOGY BUILDING — red block -->
+  <polygon points="818,45 830,33 830,125 818,137" fill="#991a1a" opacity="0.8"/>
+  <polygon points="705,137 717,125 830,125 818,137" fill="#880a0a" opacity="0.75"/>
+  <rect x="705" y="45" width="113" height="92" rx="5" fill="#cc3333" stroke="#991a1a" stroke-width="2" opacity="0.85"/>
+  <!-- Cross emblem -->
+  <line x1="761" y1="60" x2="761" y2="90" stroke="#fff" stroke-width="2.5" opacity="0.4"/>
+  <line x1="746" y1="75" x2="776" y2="75" stroke="#fff" stroke-width="2.5" opacity="0.4"/>
+
+  <!-- FIRING RANGE — small red block -->
+  <polygon points="913,50 922,42 922,95 913,103" fill="#aa2222" opacity="0.8"/>
+  <polygon points="835,103 844,95 922,95 913,103" fill="#991111" opacity="0.75"/>
+  <rect x="835" y="50" width="78" height="53" rx="4" fill="#dd4444" stroke="#aa2222" stroke-width="1.5" opacity="0.85"/>
+  <!-- Target -->
+  <circle cx="874" cy="76" r="8" fill="none" stroke="#ffcccc" stroke-width="1" opacity="0.4"/>
+  <circle cx="874" cy="76" r="3" fill="#ffcccc" opacity="0.35"/>
+
+  <!-- ICC COMMERCIAL — gold/brown block -->
+  <polygon points="148,195 160,183 160,390 148,402" fill="#a07a18" opacity="0.8"/>
+  <polygon points="28,402 40,390 160,390 148,402" fill="#806010" opacity="0.75"/>
+  <rect x="28" y="195" width="120" height="210" rx="5" fill="#c49a30" stroke="#a07a18" stroke-width="2" opacity="0.85"/>
+  <!-- Windows -->
+  <g fill="#ddb850" opacity="0.35">
+    <rect x="40" y="210" width="16" height="13" rx="1.5"/><rect x="64" y="210" width="16" height="13" rx="1.5"/>
+    <rect x="88" y="210" width="16" height="13" rx="1.5"/><rect x="112" y="210" width="16" height="13" rx="1.5"/>
+    <rect x="40" y="236" width="16" height="13" rx="1.5"/><rect x="64" y="236" width="16" height="13" rx="1.5"/>
+    <rect x="88" y="236" width="16" height="13" rx="1.5"/><rect x="112" y="236" width="16" height="13" rx="1.5"/>
+    <rect x="40" y="262" width="16" height="13" rx="1.5"/><rect x="64" y="262" width="16" height="13" rx="1.5"/>
+    <rect x="88" y="262" width="16" height="13" rx="1.5"/><rect x="112" y="262" width="16" height="13" rx="1.5"/>
+    <rect x="40" y="288" width="16" height="13" rx="1.5"/><rect x="64" y="288" width="16" height="13" rx="1.5"/>
+    <rect x="88" y="288" width="16" height="13" rx="1.5"/><rect x="112" y="288" width="16" height="13" rx="1.5"/>
+    <rect x="40" y="314" width="16" height="13" rx="1.5"/><rect x="64" y="314" width="16" height="13" rx="1.5"/>
+    <rect x="88" y="314" width="16" height="13" rx="1.5"/><rect x="112" y="314" width="16" height="13" rx="1.5"/>
+    <rect x="40" y="340" width="16" height="13" rx="1.5"/><rect x="64" y="340" width="16" height="13" rx="1.5"/>
+    <rect x="88" y="340" width="16" height="13" rx="1.5"/><rect x="112" y="340" width="16" height="13" rx="1.5"/>
+    <rect x="40" y="366" width="16" height="13" rx="1.5"/><rect x="64" y="366" width="16" height="13" rx="1.5"/>
+    <rect x="88" y="366" width="16" height="13" rx="1.5"/><rect x="112" y="366" width="16" height="13" rx="1.5"/>
+  </g>
+
+  <!-- UNDER CONSTRUCTION — tan block, dashed -->
+  <polygon points="428,215 440,203 440,325 428,337" fill="#7a6820" opacity="0.8"/>
+  <polygon points="253,337 265,325 440,325 428,337" fill="#5a4a10" opacity="0.75"/>
+  <rect x="253" y="215" width="175" height="122" rx="5" fill="#a08838" stroke="#7a6820" stroke-width="2" stroke-dasharray="10 5" opacity="0.8"/>
+  <!-- Scaffolding -->
+  <g stroke="#c0a040" stroke-width="1" opacity="0.4">
+    <line x1="265" y1="230" x2="265" y2="320"/><line x1="305" y1="230" x2="305" y2="320"/>
+    <line x1="345" y1="230" x2="345" y2="320"/><line x1="385" y1="230" x2="385" y2="320"/>
+    <line x1="265" y1="250" x2="415" y2="250"/>
+    <line x1="265" y1="280" x2="415" y2="280"/>
+    <line x1="265" y1="310" x2="415" y2="310"/>
+  </g>
+  <!-- Crane -->
+  <line x1="340" y1="195" x2="340" y2="330" stroke="#d4a840" stroke-width="2.5"/>
+  <line x1="340" y1="195" x2="418" y2="195" stroke="#d4a840" stroke-width="2"/>
+  <line x1="400" y1="195" x2="415" y2="225" stroke="#d4a840" stroke-width="1"/>
+
+  <!-- AMPHITHEATER — teal ellipse -->
+  <ellipse cx="555" cy="225" rx="75" ry="65" fill="rgba(0,0,0,0.15)"/>
+  <ellipse cx="555" cy="223" rx="75" ry="65" fill="#2aaa9a" stroke="#1a8a7a" stroke-width="2" opacity="0.85"/>
+  <ellipse cx="555" cy="223" rx="55" ry="48" fill="#1a8a7a" opacity="0.45"/>
+  <ellipse cx="555" cy="223" rx="35" ry="28" fill="#0a7a6a" opacity="0.45"/>
+  <ellipse cx="555" cy="223" rx="18" ry="14" fill="#3abbaa" opacity="0.55"/>
+  <rect x="542" y="205" width="26" height="12" rx="3" fill="#5accbc" opacity="0.6"/>
+
+  <!-- FISH POND — blue ellipse -->
+  <ellipse cx="692" cy="208" rx="50" ry="42" fill="rgba(0,0,0,0.15)"/>
+  <ellipse cx="692" cy="206" rx="50" ry="42" fill="url(#pond)" opacity="0.85"/>
+  <ellipse cx="692" cy="206" rx="50" ry="42" fill="url(#ripple)" opacity="0.6"/>
+  <circle cx="678" cy="196" r="5" fill="#4a8a3a" opacity="0.5"/>
+  <circle cx="702" cy="203" r="4" fill="#4a8a3a" opacity="0.45"/>
+  <circle cx="688" cy="216" r="6" fill="#4a8a3a" opacity="0.48"/>
+
+  <!-- MAIN BUILDING — dark grey-blue block -->
+  <polygon points="658,330 672,316 672,470 658,484" fill="#3a4050" opacity="0.8"/>
+  <polygon points="458,484 472,470 672,470 658,484" fill="#2a3040" opacity="0.75"/>
+  <rect x="458" y="330" width="200" height="154" rx="5" fill="#5a6070" stroke="#3a4050" stroke-width="2" opacity="0.85"/>
+  <!-- Windows -->
+  <g fill="#8aaace" opacity="0.35">
+    <rect x="472" y="344" width="18" height="14" rx="1.5"/><rect x="500" y="344" width="18" height="14" rx="1.5"/>
+    <rect x="528" y="344" width="18" height="14" rx="1.5"/><rect x="556" y="344" width="18" height="14" rx="1.5"/>
+    <rect x="584" y="344" width="18" height="14" rx="1.5"/><rect x="612" y="344" width="18" height="14" rx="1.5"/>
+    <rect x="640" y="344" width="18" height="14" rx="1.5"/>
+    <rect x="472" y="370" width="18" height="14" rx="1.5"/><rect x="500" y="370" width="18" height="14" rx="1.5"/>
+    <rect x="528" y="370" width="18" height="14" rx="1.5"/><rect x="556" y="370" width="18" height="14" rx="1.5"/>
+    <rect x="584" y="370" width="18" height="14" rx="1.5"/><rect x="612" y="370" width="18" height="14" rx="1.5"/>
+    <rect x="640" y="370" width="18" height="14" rx="1.5"/>
+    <rect x="472" y="396" width="18" height="14" rx="1.5"/><rect x="500" y="396" width="18" height="14" rx="1.5"/>
+    <rect x="528" y="396" width="18" height="14" rx="1.5"/><rect x="556" y="396" width="18" height="14" rx="1.5"/>
+    <rect x="584" y="396" width="18" height="14" rx="1.5"/><rect x="612" y="396" width="18" height="14" rx="1.5"/>
+    <rect x="640" y="396" width="18" height="14" rx="1.5"/>
+    <rect x="472" y="422" width="18" height="14" rx="1.5"/><rect x="500" y="422" width="18" height="14" rx="1.5"/>
+    <rect x="528" y="422" width="18" height="14" rx="1.5"/><rect x="556" y="422" width="18" height="14" rx="1.5"/>
+    <rect x="584" y="422" width="18" height="14" rx="1.5"/><rect x="612" y="422" width="18" height="14" rx="1.5"/>
+    <rect x="640" y="422" width="18" height="14" rx="1.5"/>
+    <rect x="472" y="448" width="18" height="14" rx="1.5"/><rect x="500" y="448" width="18" height="14" rx="1.5"/>
+    <rect x="528" y="448" width="18" height="14" rx="1.5"/><rect x="556" y="448" width="18" height="14" rx="1.5"/>
+    <rect x="584" y="448" width="18" height="14" rx="1.5"/><rect x="612" y="448" width="18" height="14" rx="1.5"/>
+    <rect x="640" y="448" width="18" height="14" rx="1.5"/>
+  </g>
+  <rect x="548" y="475" width="42" height="12" rx="3" fill="#3a4050"/>
+
+  <!-- CAMPUS GROUNDS — green area -->
+  <rect x="32" y="435" w="258" height="140" rx="8" fill="#4a9a3a" opacity="0.7" stroke="#2a7a1a" stroke-width="1.5"/>
+  <ellipse cx="105" cy="480" rx="38" ry="20" fill="#55aa45" opacity="0.4"/>
+  <ellipse cx="225" cy="505" rx="42" ry="22" fill="#55aa45" opacity="0.35"/>
+  <ellipse cx="160" cy="545" rx="30" ry="15" fill="#55aa45" opacity="0.3"/>
+  <!-- Flagpole -->
+  <line x1="162" y1="445" x2="162" y2="478" stroke="#aaa" stroke-width="2"/>
+  <rect x="162" y="445" width="16" height="10" rx="1" fill="#cc3333"/>
+
+  <!-- KADIWA MARKET — green block -->
+  <polygon points="733,510 746,498 746,605 733,617" fill="#1a6a1a" opacity="0.8"/>
+  <polygon points="493,617 506,605 746,605 733,617" fill="#0a5a0a" opacity="0.75"/>
+  <rect x="493" y="510" width="240" height="107" rx="5" fill="#2a8a2a" stroke="#1a6a1a" stroke-width="2" opacity="0.85"/>
+  <!-- Market stalls -->
+  <g fill="#1a7a1a" opacity="0.3">
+    <rect x="506" y="522" width="34" height="24" rx="2"/><rect x="548" y="522" width="34" height="24" rx="2"/>
+    <rect x="590" y="522" width="34" height="24" rx="2"/><rect x="632" y="522" width="34" height="24" rx="2"/>
+    <rect x="674" y="522" width="34" height="24" rx="2"/><rect x="716" y="522" width="34" height="24" rx="2"/>
+  </g>
+
+  <!-- ===== GATES ===== -->
+  <!-- Main Gate -->
+  <rect x="48" y="602" width="78" height="28" rx="3" fill="#8a8868" stroke="#6a6848" stroke-width="1.5"/>
+  <rect x="58" y="607" width="8" height="18" rx="2" fill="#6a6848"/>
+  <rect x="110" y="607" width="8" height="18" rx="2" fill="#6a6848"/>
+  <rect x="58" y="604" width="60" height="5" rx="2" fill="#7a7858"/>
+
+  <!-- Kadiwa Gate -->
+  <rect x="490" y="632" width="68" height="26" rx="3" fill="#8a8868" stroke="#6a6848" stroke-width="1.5"/>
+  <rect x="500" y="636" width="7" height="18" rx="2" fill="#6a6848"/>
+  <rect x="550" y="636" width="7" height="18" rx="2" fill="#6a6848"/>
+  <rect x="500" y="633" width="57" height="4" rx="2" fill="#7a7858"/>
+
+  <!-- ===== TREES ===== -->
+  <g>
+    <!-- tree helper: trunk + canopy + highlight -->
+    <!-- Top-left cluster -->
+    <ellipse cx="52" cy="132" rx="7" ry="3" fill="rgba(0,0,0,0.15)"/>
+    <rect x="49" y="125" width="5" height="10" rx="1" fill="#6a4a2a"/>
+    <circle cx="52" cy="118" r="12" fill="url(#t1)"/>
+    <circle cx="49" cy="115" r="5" fill="rgba(255,255,255,0.1)"/>
+
+    <ellipse cx="120" cy="112" rx="6" ry="2.5" fill="rgba(0,0,0,0.15)"/>
+    <rect x="117" y="105" width="5" height="9" rx="1" fill="#6a4a2a"/>
+    <circle cx="120" cy="100" r="10" fill="url(#t2)"/>
+    <circle cx="117" cy="97" r="4" fill="rgba(255,255,255,0.1)"/>
+
+    <ellipse cx="190" cy="137" rx="5" ry="2" fill="rgba(0,0,0,0.15)"/>
+    <rect x="187" y="130" width="4" height="8" rx="1" fill="#6a4a2a"/>
+    <circle cx="189" cy="125" r="8" fill="url(#t1)"/>
+
+    <!-- Between buildings -->
+    <ellipse cx="400" cy="115" rx="5.5" ry="2.5" fill="rgba(0,0,0,0.15)"/>
+    <rect x="397" y="108" width="4.5" height="9" rx="1" fill="#6a4a2a"/>
+    <circle cx="400" cy="103" r="9" fill="url(#t2)"/>
+
+    <ellipse cx="580" cy="122" rx="6" ry="2.5" fill="rgba(0,0,0,0.15)"/>
+    <rect x="577" y="115" width="5" height="9" rx="1" fill="#6a4a2a"/>
+    <circle cx="580" cy="110" r="10" fill="url(#t1)"/>
+
+    <!-- Top-right -->
+    <ellipse cx="920" cy="88" rx="6.5" ry="3" fill="rgba(0,0,0,0.15)"/>
+    <rect x="917" y="80" width="5" height="10" rx="1" fill="#6a4a2a"/>
+    <circle cx="920" cy="74" r="11" fill="url(#t1)"/>
+    <circle cx="917" cy="71" r="4.5" fill="rgba(255,255,255,0.1)"/>
+
+    <ellipse cx="955" cy="110" rx="5.5" ry="2.5" fill="rgba(0,0,0,0.15)"/>
+    <rect x="952" y="103" width="5" height="9" rx="1" fill="#6a4a2a"/>
+    <circle cx="955" cy="98" r="9" fill="url(#t2)"/>
+
+    <ellipse cx="885" cy="135" rx="5" ry="2" fill="rgba(0,0,0,0.15)"/>
+    <rect x="882" y="128" width="4" height="8" rx="1" fill="#6a4a2a"/>
+    <circle cx="884" cy="124" r="8" fill="url(#t1)"/>
+
+    <!-- Left side -->
+    <ellipse cx="32" cy="288" rx="5.5" ry="2.5" fill="rgba(0,0,0,0.15)"/>
+    <rect x="29" y="281" width="5" height="9" rx="1" fill="#6a4a2a"/>
+    <circle cx="32" cy="275" r="9" fill="url(#t2)"/>
+
+    <ellipse cx="162" cy="282" rx="5" ry="2" fill="rgba(0,0,0,0.15)"/>
+    <rect x="159" y="275" width="4.5" height="8" rx="1" fill="#6a4a2a"/>
+    <circle cx="162" cy="271" r="8" fill="url(#t1)"/>
+
+    <!-- Bottom-left -->
+    <ellipse cx="52" cy="592" rx="6" ry="2.5" fill="rgba(0,0,0,0.15)"/>
+    <rect x="49" y="584" width="5" height="10" rx="1" fill="#6a4a2a"/>
+    <circle cx="52" cy="578" r="10" fill="url(#t1)"/>
+
+    <ellipse cx="138" cy="596" rx="5.5" ry="2.5" fill="rgba(0,0,0,0.15)"/>
+    <rect x="135" y="588" width="5" height="10" rx="1" fill="#6a4a2a"/>
+    <circle cx="138" cy="582" r="9" fill="url(#t2)"/>
+
+    <ellipse cx="345" cy="585" rx="5" ry="2" fill="rgba(0,0,0,0.15)"/>
+    <rect x="342" y="578" width="4.5" height="9" rx="1" fill="#6a4a2a"/>
+    <circle cx="345" cy="573" r="8" fill="url(#t1)"/>
+
+    <ellipse cx="425" cy="598" rx="5.5" ry="2.5" fill="rgba(0,0,0,0.15)"/>
+    <rect x="422" y="590" width="5" height="10" rx="1" fill="#6a4a2a"/>
+    <circle cx="425" cy="584" r="9" fill="url(#t2)"/>
+
+    <!-- Right side -->
+    <ellipse cx="790" cy="378" rx="5.5" ry="2.5" fill="rgba(0,0,0,0.15)"/>
+    <rect x="787" y="370" width="5" height="10" rx="1" fill="#6a4a2a"/>
+    <circle cx="790" cy="364" r="9" fill="url(#t1)"/>
+
+    <ellipse cx="830" cy="400" rx="5" ry="2" fill="rgba(0,0,0,0.15)"/>
+    <rect x="827" y="393" width="4.5" height="9" rx="1" fill="#6a4a2a"/>
+    <circle cx="830" cy="388" r="8" fill="url(#t2)"/>
+
+    <ellipse cx="905" cy="390" rx="5.5" ry="2.5" fill="rgba(0,0,0,0.15)"/>
+    <rect x="902" y="382" width="5" height="10" rx="1" fill="#6a4a2a"/>
+    <circle cx="905" cy="376" r="9" fill="url(#t1)"/>
+
+    <ellipse cx="948" cy="410" rx="5" ry="2" fill="rgba(0,0,0,0.15)"/>
+    <rect x="945" y="403" width="4.5" height="9" rx="1" fill="#6a4a2a"/>
+    <circle cx="948" cy="398" r="8" fill="url(#t2)"/>
+
+    <!-- Bottom-right -->
+    <ellipse cx="810" cy="545" rx="5.5" ry="2.5" fill="rgba(0,0,0,0.15)"/>
+    <rect x="807" y="537" width="5" height="10" rx="1" fill="#6a4a2a"/>
+    <circle cx="810" cy="531" r="9" fill="url(#t1)"/>
+
+    <ellipse cx="885" cy="558" rx="5" ry="2" fill="rgba(0,0,0,0.15)"/>
+    <rect x="882" y="550" width="4.5" height="9" rx="1" fill="#6a4a2a"/>
+    <circle cx="885" cy="545" r="8" fill="url(#t2)"/>
+
+    <ellipse cx="945" cy="540" rx="6" ry="2.5" fill="rgba(0,0,0,0.15)"/>
+    <rect x="942" y="532" width="5" height="10" rx="1" fill="#6a4a2a"/>
+    <circle cx="945" cy="526" r="10" fill="url(#t1)"/>
+
+    <ellipse cx="665" cy="448" rx="5" ry="2" fill="rgba(0,0,0,0.15)"/>
+    <rect x="662" y="441" width="4.5" height="9" rx="1" fill="#6a4a2a"/>
+    <circle cx="665" cy="436" r="8" fill="url(#t2)"/>
+
+    <ellipse cx="365" cy="438" rx="4.5" ry="2" fill="rgba(0,0,0,0.15)"/>
+    <rect x="362" y="431" width="4" height="8" rx="1" fill="#6a4a2a"/>
+    <circle cx="365" cy="427" r="7" fill="url(#t1)"/>
+
+    <ellipse cx="240" cy="185" rx="4" ry="1.5" fill="rgba(0,0,0,0.15)"/>
+    <rect x="237" y="179" width="4" height="7" rx="1" fill="#6a4a2a"/>
+    <circle cx="239" cy="175" r="7" fill="url(#t2)"/>
+  </g>
+
+  <!-- ===== TITLE ===== -->
+  <text x="500" y="693" text-anchor="middle" font-family="Segoe UI, system-ui, sans-serif" font-size="10" fill="#b0d0b0" opacity="0.5">CCSJDM Campus — City College of San Jose Del Monte</text>
+</svg>
